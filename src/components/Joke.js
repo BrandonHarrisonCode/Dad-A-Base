@@ -6,7 +6,7 @@ class Joke extends React.Component {
     super(props)
 
     this.fetchJoke = this.fetchJoke.bind(this)
-    this.componentWillUnmount = this.componentWillUnmount.bind(this)
+    this.componentDidMount = this.componentDidMount.bind(this)
 
     this.state = {
       id: '',
