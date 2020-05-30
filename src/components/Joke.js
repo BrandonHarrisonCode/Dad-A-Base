@@ -6,6 +6,7 @@ class Joke extends React.Component {
     super(props)
 
     this.fetchJoke = this.fetchJoke.bind(this)
+    this.handleClick = this.handleClick.bind(this)
     this.componentDidMount = this.componentDidMount.bind(this)
 
     this.state = {
@@ -48,10 +49,15 @@ class Joke extends React.Component {
       })
   }
 
+  async handleClick() {
+    console.log('here')
+    this.fetchJoke()
+  }
+
   render() {
     const id = this.state.id
     const joke = this.state.joke
-    console.log(joke)
+    const handleClick = this.handleClick
 
     return (
       <header id="header" style={this.props.timeout ? { display: 'none' } : {}}>
@@ -59,6 +65,7 @@ class Joke extends React.Component {
           <div className="inner">
             <h1>Dad-A-Base Entry #{id}</h1>
             <p dangerouslySetInnerHTML={{ __html: joke }}></p>
+            <button onClick={handleClick}>Ugh...</button>
           </div>
         </div>
       </header>
