@@ -25,7 +25,7 @@ class Joke extends React.Component {
   }
 
   async fetchJoke() {
-    const url = 'https://the-dad-a-base-api.herokuapp.com/random'
+    const url = 'https://api.dad-a-base.online/random'
     fetch(url)
       .then(response => {
         if (!response.ok) {
