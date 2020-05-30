@@ -5,6 +5,7 @@ class Joke extends React.Component {
   constructor(props) {
     super(props)
 
+    const AbortController = window.AbortController
     this.controller = new AbortController()
     this.signal = this.controller.signal
 
