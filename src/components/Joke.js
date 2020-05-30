@@ -5,10 +5,6 @@ class Joke extends React.Component {
   constructor(props) {
     super(props)
 
-    const AbortController = window.AbortController
-    this.controller = new AbortController()
-    this.signal = this.controller.signal
-
     this.fetchJoke = this.fetchJoke.bind(this)
     this.componentWillUnmount = this.componentWillUnmount.bind(this)
 
@@ -28,10 +24,8 @@ class Joke extends React.Component {
   }
 
   async fetchJoke() {
-    const signal = this.signal
-
     const url = 'https://the-dad-a-base-api.herokuapp.com/random'
-    fetch(url, { signal })
+    fetch(url)
       .then(response => {
         if (!response.ok) {
           throw new Error('Error while accessing joke.')
