@@ -51,13 +51,14 @@ class Joke extends React.Component {
   render() {
     const id = this.state.id
     const joke = this.state.joke
+    console.log(joke)
 
     return (
       <header id="header" style={this.props.timeout ? { display: 'none' } : {}}>
         <div className="content">
           <div className="inner">
             <h1>Dad-A-Base Entry #{id}</h1>
-            <p>{joke}</p>
+            <p dangerouslySetInnerHTML={{ __html: joke }}></p>
           </div>
         </div>
       </header>
