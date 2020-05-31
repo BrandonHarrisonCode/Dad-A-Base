@@ -1,19 +1,27 @@
-# gatsby-starter-dimension
+# The Dad-A-Base
 
-**This is a starter for Gatsby.js V2.**
+Where does a software engineer keep all of his dad jokes? In the Dad-A-Base, of course.
 
-**The older V1 version of this starter can be found on the v1 branch:**
+For more jokes that make you go "that was kind of amusing," see: [https://dad-a-base.online/](https://dad-a-base.online/)
 
-Gatsby.js V2 starter based on the Dimension site template, designed by HTML5 UP. Check out https://codebushi.com/gatsby-starters-and-themes/ for more Gatsby starters and templates.
+# Motivation
 
-## Preview
+This is website tells random dad jokes that are stored in the Dad-A-Base that I made during quarantine. There's really not much more to it than that. 
 
-https://gatsby-dimension.surge.sh/
+This is the frontend portion of the project. For the backend and Dad-A-Base itself see [this repository](https://github.com/BrandonHarrisonCode/Dad-A-Base-API).
 
-## Installation
+# Tech/framework used
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-<br/>
-`gatsby new gatsby-starter-dimension https://github.com/codebushi/gatsby-starter-dimension`
+The Dad-A-Base was built with:
+* [Gatsby](https://www.gatsbyjs.org/) (for the frontend)
+* [Gatsby Dimension](https://github.com/codebushi/gatsby-starter-dimension) / [HTML5 UP](https://html5up.net/) (for the design template)
+* [Heroku](https://www.heroku.com/) (for hosting)
 
-Run `gatsby develop` in the terminal to start the dev site.
+# Contribute
+
+Any and all contributions are welcome. This is a fun, on-the-side kind of project, so please be patient with me getting back to you.
+
+# License
+
+This project uses the MIT license.
+
