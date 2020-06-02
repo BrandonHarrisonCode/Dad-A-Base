@@ -17,6 +17,12 @@ The Dad-A-Base was built with:
 * [Gatsby Dimension](https://github.com/codebushi/gatsby-starter-dimension) / [HTML5 UP](https://html5up.net/) (for the design template)
 * [Heroku](https://www.heroku.com/) (for hosting)
 
+# Tests
+
+All tests are written in `Jest`.
+
+Use `yarn test` to run the testing suite.
+
 # Contribute
 
 Any and all contributions are welcome. This is a fun, on-the-side kind of project, so please be patient with me getting back to you.
