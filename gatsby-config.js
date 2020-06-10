@@ -5,6 +5,12 @@ module.exports = {
     description: 'The best collection of dad jokes on the web.',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-169207740-1',
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
