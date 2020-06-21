@@ -61,20 +61,22 @@ class Joke extends React.Component {
 
     return (
       <div>
-      <header id="header" style={this.props.timeout ? { display: 'none' } : {}}>
-       <div className="content">
-          <div className="inner">
-            <h1>Dad-A-Base Entry #{id}</h1>
-            <p dangerouslySetInnerHTML={{ __html: joke }}></p>
-            <button onClick={handleClick}>Ugh...</button>
+        <header
+          id="header"
+          style={this.props.timeout ? { display: 'none' } : {}}
+        >
+          <div className="content">
+            <div className="inner">
+              <h1>Dad-A-Base Entry #{id}</h1>
+              <p dangerouslySetInnerHTML={{ __html: joke }}></p>
+              <button onClick={handleClick}>Ugh...</button>
+            </div>
           </div>
-        </div>
-      </header>
-        <div style={{textAlign: 'center'}}>
-        <br/><br/>
-        <h3>
-          Dedicated to Don Harrison
-      </h3>
+        </header>
+        <div style={{ textAlign: 'center' }}>
+          <br />
+          <br />
+          <h3>Dedicated to Don Harrison</h3>
         </div>
       </div>
     )
