@@ -60,8 +60,9 @@ class Joke extends React.Component {
     const handleClick = this.handleClick
 
     return (
+      <div>
       <header id="header" style={this.props.timeout ? { display: 'none' } : {}}>
-        <div className="content">
+       <div className="content">
           <div className="inner">
             <h1>Dad-A-Base Entry #{id}</h1>
             <p dangerouslySetInnerHTML={{ __html: joke }}></p>
@@ -69,6 +70,13 @@ class Joke extends React.Component {
           </div>
         </div>
       </header>
+        <div style={{textAlign: 'center'}}>
+        <br/><br/>
+        <h3>
+          Dedicated to Don Harrison
+      </h3>
+        </div>
+      </div>
     )
   }
 }
