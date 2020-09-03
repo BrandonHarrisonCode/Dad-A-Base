@@ -58,6 +58,7 @@ class Joke extends React.Component {
     const id = this.state.id
     const joke = this.state.joke
     const handleClick = this.handleClick
+    const props = this.props
 
     return (
       <div>
@@ -68,16 +69,29 @@ class Joke extends React.Component {
           <div className="content">
             <div className="inner">
               <h1>Dad-A-Base Entry #{id}</h1>
-              <p dangerouslySetInnerHTML={{ __html: joke }}></p>
+              <p>{joke}</p>
               <button onClick={handleClick}>Ugh...</button>
             </div>
           </div>
+          <nav>
+            <ul>
+              <li>
+                <button
+                  onClick={() => {
+                    props.onOpenArticle('about')
+                  }}
+                >
+                  About
+                </button>
+              </li>
+              <li>
+                <a href="https://ko-fi.com/brandonharrison">
+                  <button>Donate</button>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </header>
-        <div style={{ textAlign: 'center' }}>
-          <br />
-          <br />
-          <h3>Dedicated to Don Harrison</h3>
-        </div>
       </div>
     )
   }

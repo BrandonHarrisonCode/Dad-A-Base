@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/layout'
 
+import Articles from '../components/Articles'
 import Joke from '../components/Joke'
 import Footer from '../components/Footer'
 
@@ -96,6 +97,14 @@ class IndexPage extends React.Component {
             <Joke
               onOpenArticle={this.handleOpenArticle}
               timeout={this.state.timeout}
+            />
+            <Articles
+              isArticleVisible={this.state.isArticleVisible}
+              timeout={this.state.timeout}
+              articleTimeout={this.state.articleTimeout}
+              article={this.state.article}
+              onCloseArticle={this.handleCloseArticle}
+              setWrapperRef={this.setWrapperRef}
             />
             <Footer timeout={this.state.timeout} />
           </div>
