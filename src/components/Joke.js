@@ -69,7 +69,7 @@ class Joke extends React.Component {
           <div className="content">
             <div className="inner">
               <h1>Dad-A-Base Entry #{id}</h1>
-              <p>{joke}</p>
+              <p dangerouslySetInnerHTML={{ __html: joke }}></p>
               <button onClick={handleClick}>Ugh...</button>
             </div>
           </div>
