@@ -2,4 +2,5 @@ language: node_js
 node_js: 14
 script:
   - yarn run prettier --check '**/*.js'
+  - yarn run lint
   - yarn run jest

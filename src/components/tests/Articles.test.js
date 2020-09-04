@@ -1,12 +1,14 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import Footer from '../Footer'
+import Articles from '../Articles'
 
-describe('footer', () => {
+describe('articles', () => {
   it('renders without crashing', () => {
     expect.assertions(1)
-    const tree = renderer.create(<Footer />).toJSON()
+    const tree = renderer
+      .create(<Articles setWrapperRef={jest.fn()} />)
+      .toJSON()
     expect(tree).not.toBeNull()
   })
 })

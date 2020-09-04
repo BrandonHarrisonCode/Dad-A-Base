@@ -11,6 +11,7 @@
     "gatsby-plugin-react-helmet": "^3.1.21",
     "gatsby-plugin-sass": "^2.1.27",
     "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1"
@@ -23,11 +24,20 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "lint": "eslint src"
   },
   "devDependencies": {
     "babel-jest": "^26.0.1",
     "babel-preset-gatsby": "^0.4.7",
+    "eslint": "^7.8.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-config-react-app": "^5.2.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-react": "^7.20.6",
+    "gatsby-plugin-eslint": "^2.0.8",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.0.1",
     "prettier": "^1.19.1",

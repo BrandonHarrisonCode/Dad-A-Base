@@ -1,6 +1,7 @@
 import React from 'react'
-import Layout from '../components/layout'
+import PropTypes from 'prop-types'
 
+import Layout from '../components/layout'
 import Articles from '../components/Articles'
 import Joke from '../components/Joke'
 import Footer from '../components/Footer'
@@ -113,6 +114,12 @@ class IndexPage extends React.Component {
       </Layout>
     )
   }
+}
+
+IndexPage.propTypes = {
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
+  }),
 }
 
 export default IndexPage

@@ -4,14 +4,13 @@ import logo from '../images/Dad-A-Base-Logo.svg'
 
 class Articles extends React.Component {
   render() {
-    let close = (
+    const close = (
       <div
         className="close"
         role="button"
         aria-label="Close article"
         tabIndex={0}
         onClick={() => {
-          console.log('here')
           this.props.onCloseArticle()
         }}
         onKeyDown={() => {

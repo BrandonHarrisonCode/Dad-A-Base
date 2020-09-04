@@ -50,15 +50,14 @@ class Joke extends React.Component {
   }
 
   async handleClick() {
-    console.log('here')
     this.fetchJoke()
   }
 
   render() {
-    const id = this.state.id
-    const joke = this.state.joke
-    const handleClick = this.handleClick
-    const props = this.props
+    const { id } = this.state
+    const { joke } = this.state
+    const { handleClick } = this
+    const { props } = this
 
     return (
       <div>
@@ -100,6 +99,7 @@ class Joke extends React.Component {
 Joke.propTypes = {
   joke: PropTypes.string,
   timeout: PropTypes.bool,
+  onOpenArticle: PropTypes.func,
 }
 
 export default Joke
