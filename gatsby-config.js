@@ -16,11 +16,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'The Dad-A-Base',
+        short_name: 'Dad-A-Base',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#2D2831',
+        theme_color: '#fff',
         display: 'minimal-ui',
         icon: 'src/images/favicon.png', // This path is relative to the root of the site.
       },
